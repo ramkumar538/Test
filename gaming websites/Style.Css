@@ -1,0 +1,47 @@
+body{
+   background: linear-gradient(to left,black,red,red,black);
+}
+img{
+   height: 500px;
+   width: 300px;
+}
+h1{
+   font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+#logocircle{
+   height: 50px;
+   width: 50px;
+   border-radius: 100px;
+   position: absolute;
+   right: 30px;
+   top: 30px;
+}
+button{
+   position: absolute;
+   right: 80%;
+   top: 102%;
+   background-color: black;
+}
+h2{
+   font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.row{
+   display: flex;
+}
+#fadeAnimation{
+   animation: fadeIn 2s ease-in-out forwards;
+}
+#logocircle{
+   animation: fadeIn 0.5s ease-in-out infinite alternate-reverse;
+
+}
+@keyframes fadeIn{
+   0%{
+      opacity: 0;
+      transform: scale(1);
+  }
+  100%{
+      opacity: 1;
+      transform: scale(1.5);
+  }
+}

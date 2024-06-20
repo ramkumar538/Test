@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>fontawesome</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Ojuju:wght@200..800&family=Parisienne&display=swap"
+        rel="stylesheet">
+    <script src="https://kit.fontawesome.com/c5b6bce2d1.js" crossorigin="anonymous"></script>
+</head>
+<style>
+    body {
+        text-align: center;
+        font-family: Parisienne;
+        background: linear-gradient(to left,purple,pink);
+    }
+
+    .row {
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap
+        justify-content:center;
+    }
+
+    .col {
+        flex: 1;
+        width: 100%;
+        height: 300px;
+        padding: 35px 0;
+        margin: 0px 10px;
+        border: black solid 1px;
+        border-radius: 30px;
+        box-shadow: black 0px 0px 15px 0px;
+        transition:0.3s ease-in-out;
+    }
+
+    i {
+        font-size: 50px;
+    }
+
+    button {
+        padding: 10px;
+        border-radius: 30px;
+        color: white;
+        font-size: 20px;
+        font-weight: bold;
+        font-family: Ojuju;
+        box-shadow: black 0px 0px 5px 0px;
+        text-shadow: black 2px 2px;
+    }
+
+    p {
+        color: white;
+        font-size: 21px;
+        padding: 5px 0px;
+        font-weight: bold;
+        border: black solid 1px;
+        text-shadow: black 2px 2px 15px;
+    }
+
+    h1{
+        text-shadow: black 1px 1px;
+        font-size: 50px;
+    }
+    .col:hover{
+        background: linear-gradient(to left,rgb(239, 60, 90),white);
+        box-shadow: none;
+    }
+    button:hover{
+        transform: scale(1.1);
+    }
+    i:hover{
+        font-size: 80px;
+
+    }
+    .greenButton{
+       background-color: white;
+    }
+    .greenButton:hover{
+        background: linear-gradient(to left,white,green);
+    }
+    .yellowButton{
+        background: linear-gradient(to left,white,rgb(18, 167, 226));
+
+    }
+    .yellowButton:hover{
+        background: linear-gradient(to left,grey,yellow);
+    }
+    @media(max-width:850px){
+        body{
+            background-color: black;
+        }
+    }
+    
+
+</style>
+
+<body>
+    <h1><span style="color: red;">F</span><span style="color: green;">e</span><span style="color: blue;">a</span><span
+            style="color: blueviolet;">t</span><span style="color: tomato;">u</span><span
+            style="color: rgb(39, 157, 98);">r</span><span style="color: rgb(158, 158, 24);">e</span><span
+            style="color: salmon;">s</span></h1>
+    <div class="row">
+        <div class="col">
+            <i class="fa-solid fa-gear fa-spin" style="color: green;"></i>
+            <p style="background-color: green;">Easy to Use</p>
+            <button style="background-color: green;">Read More</button>
+        </div>
+        <div class="col">
+            <i class="fa-brands fa-soundcloud fa-beat-fade" style="color: rgb(78, 160, 177);"></i>
+            <p style="background-color: rgb(78, 160, 177);">Innovative Design</p>
+            <button style="background-color: rgb(78, 160, 177);">Read More</button>
+        </div>
+        <div class="col">
+            <i class="fa-regular fa-face-smile fa-bounce" style="color: crimson;"></i>
+            <p style="background-color: crimson;">User Friendly</p>
+            <button class="yellowButton" style="color: black;">Read More</button>
+        </div>
+        <div class="col">
+            <i class="fa-solid fa-shield-halved fa-flip" style="color: rgb(163, 188, 80);"></i>
+            <p style="background-color: rgb(163, 188, 80);">24/7 Customer Service</p>
+            <button class="greenButton" style="color: black;">Read More</button>
+        </div>
+    </div>
+</body>
+
+</html>
